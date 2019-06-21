@@ -1,8 +1,8 @@
-FROM node:10.15.2-alpine
+FROM node:10.16.0-alpine
 
 ENV NPM_CONFIG_PREFIX=/home/node/.npm-global
 ENV PATH=$PATH:/home/node/.npm-global/bin
-ENV YARN_VERSION 1.13.0
+ENV YARN_VERSION 1.16.0
 
 RUN set -x && \
   apk add --update --no-cache tzdata --virtual .build-deps-yarn curl && \
